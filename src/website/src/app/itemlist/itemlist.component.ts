@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ITEMS } from "../mock-items";
+import { ItemService } from "../item.service";
 import { Item } from "../item";
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 import { faThumbsDown } from '@fortawesome/free-solid-svg-icons';
@@ -11,13 +11,19 @@ import { faThumbsDown } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./itemlist.component.sass']
 })
 export class ItemlistComponent implements OnInit {
-  items = ITEMS;
+  items: Item[];
   faThumbsUp = faThumbsUp;
   faThumbsDown = faThumbsDown;
 
-  constructor() { }
+  constructor(private itemService: ItemService) {}
+
+  getItems(): void {
+    this.itemService.getItems()
+      .subscribe(items => this.items = items);
+  }
 
   ngOnInit(): void {
+    this.getItems();
   }
 
   onVoteUp(item: Item): void {
