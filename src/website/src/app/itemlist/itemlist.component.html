@@ -1,0 +1,14 @@
+<ul class="items">
+    <li *ngFor="let item of items">
+        <div class="contents">
+            <div class="title"><a href="{{item.url}}">{{item.title}}</a></div>
+            <div class="buttons">
+                <fa-icon [icon]="faThumbsUp" (click)="onVoteUp(item)"></fa-icon>
+                <fa-icon [icon]="faThumbsDown" (click)="onVoteDown(item)"></fa-icon>
+            </div>
+        </div>    
+        <div class="metadata">
+            <span>by: </span>{{item.submitter}}, {{item.dateAdded | timeago:live}}, {{item.upVotes}} votes, {{item.comments}} comments 
+        </div>
+    </li>
+</ul>
