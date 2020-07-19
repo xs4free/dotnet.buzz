@@ -7,18 +7,22 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ItemlistComponent } from './itemlist/itemlist.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ItemCommentsComponent } from './itemcomments/itemcomments.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ItemlistComponent
+    ItemlistComponent,
+    ItemCommentsComponent
   ],
   imports: [
     BrowserModule,
     TimeagoModule.forRoot(),
-    FontAwesomeModule
+    FontAwesomeModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

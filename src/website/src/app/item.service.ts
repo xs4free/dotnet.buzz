@@ -13,4 +13,8 @@ export class ItemService {
   getItems(): Observable<Item[]> {
     return of(ITEMS);
   }
+
+  getItem(id: string): Observable<Item> {
+    return of(ITEMS.find(item => item.id === id));
+  }
 }
