@@ -1,0 +1,26 @@
+{
+    "id": "6522F00D-FA73-4F45-80F6-1C32E9637F9C",
+    "title": "Performance Improvements in .NET 5",
+    "url": "https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-5/",
+    "submitter": "Stephen",
+    "dateAdded": "2020-07-17T11:10:00",
+    "upVotes": 10,    
+    "comments": [
+        {
+            "author": "User1",
+            "date": "2020-07-17T11:11:15",
+            "comment": "Great!",
+            "comments": [
+                {
+                    "author": "User2",
+                    "date": "2020-07-17T11:11:15",
+                    "comment": "Meh!"
+                },
+                {
+                    "author": "User3",
+                    "date": "2020-07-17T11:11:15",
+                    "comment": "Bad!"
+                }]
+        }
+    ]
+}
