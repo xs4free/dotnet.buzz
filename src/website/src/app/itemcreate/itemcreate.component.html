@@ -1,0 +1,9 @@
+<div>
+  <label>Title:
+    <input #itemTitle />
+  </label>
+
+  <button (click)="add(itemTitle.value); itemTitle.value=''">Add</button>
+
+  <span>{{ item.id }}</span>
+</div>
